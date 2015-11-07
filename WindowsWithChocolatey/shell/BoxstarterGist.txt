@@ -19,10 +19,18 @@ Set-TaskbarOptions -Size Small -Lock
 # *****************
 # Install Chocolatey Packages
 # *****************
-choco install git -y
-choco install nodejs -y
-choco install visualstudiocode -y
-choco install GoogleChrome -y
+choco install -y git.install
+choco install -y github
+choco install -y sourcetree
+choco install -y nodejs
+choco install -y visualstudiocode
+choco install -y GoogleChrome
+choco install -y visualstudio2013professional -version 12.0.21005.20141031 # Update 4
+choco install -y ncrunch-vs2013
+choco install -y atom
+choco install -y firefox
+choco install -y fiddler4
+choco install -y conemu
 
 # *****************
 # Turn on Chocolatey Confirmation Prompt before installing
@@ -74,12 +82,12 @@ Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Google\Chrome\Appl
 # *****************
 # Git Clone Projects
 # *****************
-#$projectDir = "${env:systemdrive}\projects"
+$projectDir = "${env:systemdrive}\Git"
 
-#If (!(Test-Path $projectDir)) {
-#	New-Item -Path $projectDir -ItemType Directory
-#}
+If (!(Test-Path $projectDir)) {
+	New-Item -Path $projectDir -ItemType Directory
+}
 
-#cd $projectDir
+cd $projectDir
 
-#git clone https://github.com/digitaldrummerj/VagrantTalk.git
+git clone https://github.com/digitaldrummerj/VagrantTalk.git
