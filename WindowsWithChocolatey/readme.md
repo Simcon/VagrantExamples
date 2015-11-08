@@ -1,16 +1,7 @@
-##Windows Machine With Chocolatey Installed
+## VagrantExamples
 
-This machine will use a base Windows machine.  Then Chocolatey, Boxstarter, multiple Chocolatey packages, will be installed as part of the provisioning as well as several Windows configurations and npm packages.
+If you experience difficulties rebuilding machines then try:
 
-
-##Important Files:
-
-* main.cmd - run scripts to install Chocolatey and removes default Windows start menu programs.  
-* RemoveDefaultPrograms.ps1 - removes default Windows 8 start menu programs.  Blog Post with details of script: [http://digitaldrummerj.me/windows8-script-uninstall-default-programs/](http://digitaldrummerj.me/windows8-script-uninstall-default-programs/).
-* InstallChocolatey.ps1 - installs Chocolatey.
-* InstallBoxStarter.bat - installs Boxstarter.
-* RunBoxStarterGist.bat - run the BoxStarterGist.txt file.
-* BoxStarterGist.txt - installs of the software, configures Windows, configures Visual Studio Code, run a git clone of this repository to demonstrate pulling down your source code as part of provisioning.
-* VisualStudioCode_*.json - configuration files for Visual Studio Code.
-
-To create the virtual machine run "vagrant up" in this directory.
+* Deleting from VirtualBox UI (with remove files)
+* Deleting from **C:\Users\\*username*\VirtualBox VMs**
+* **vagrant box remove *machinename* **

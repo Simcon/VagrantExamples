@@ -20,7 +20,7 @@ Set-TaskbarOptions -Size Small -Lock
 # Install Chocolatey Packages
 # *****************
 choco install -y git.install
-choco install -y github
+#choco install -y github
 choco install -y sourcetree
 choco install -y nodejs
 choco install -y visualstudiocode
@@ -41,9 +41,9 @@ choco install -y conemu
 # *****************
 # Pin Items to Task Bar
 # *****************
-Install-ChocolateyPinnedTaskBarItem "${env:SystemRoot}\system32\WindowsPowerShell\v1.0\powershell_ise.exe"
-Install-ChocolateyPinnedTaskBarItem "${env:UserProfile}\Desktop\code.lnk"
-Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
+#Install-ChocolateyPinnedTaskBarItem "${env:SystemRoot}\system32\WindowsPowerShell\v1.0\powershell_ise.exe"
+#Install-ChocolateyPinnedTaskBarItem "${env:UserProfile}\Desktop\code.lnk"
+#Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
 
 # *****************
 # Configuration NPM
